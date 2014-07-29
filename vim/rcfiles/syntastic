@@ -1,0 +1,8 @@
+" Syntastic configuration
+"----------------------------------------------------------------------
+let g:syntastic_aggregate_errors = 1
+" For color definition
+" http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+highlight SignColumn ctermfg=252   ctermbg=237 cterm=bold
+
+" vim:ft=vim

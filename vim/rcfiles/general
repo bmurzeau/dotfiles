@@ -17,6 +17,7 @@ set encoding=utf-8
 
 " Use relativenumber, but provide easy toggle
 set relativenumber
+set nu
 nnoremap <leader>nu :call ToggleRelativeNumber()<cr>
 nnoremap <leader>rn :call ToggleRelativeNumber()<cr>
 function! ToggleRelativeNumber()
@@ -26,6 +27,9 @@ function! ToggleRelativeNumber()
     set relativenumber
   endif
 endfunction
+
+" For a 256 color capable terminal
+set t_Co=256
 
 " Disable sound/visual bell on errors
 " May need additional config about audible bell

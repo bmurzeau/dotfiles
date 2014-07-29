@@ -1,0 +1,5 @@
+" Vim syntax for Dockerfile 
+" ---------------------------------------
+Bundle "ekalinin/Dockerfile.vim"
+
+" vim:ft=vim
