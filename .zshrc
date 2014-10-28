@@ -37,7 +37,7 @@ DISABLE_CORRECTION="true"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -55,6 +55,17 @@ cdpath=($HOME/Documents/PredicSis/sources $HOME/Documents/perso)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+# Amazon AWS
+export PATH=$PATH:"/usr/local/aws-eb/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7"
+
+# Android SDK
+export PATH=$PATH:/Users/bastien/Documents/Google/Android/adt-bundle-mac-x86_64/sdk/tools
+export PATH=$PATH:/Users/bastien/Documents/Google/Android/adt-bundle-mac-x86_64/sdk/platform-tools
+
+# Go language
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=/usr/local/opt/go/libexec/bin
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
