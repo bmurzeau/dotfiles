@@ -65,7 +65,14 @@ export PATH=$PATH:/Users/bastien/Documents/Google/Android/adt-bundle-mac-x86_64/
 
 # Go language
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=/usr/local/opt/go/libexec/bin
+export GOPATH=/Users/bastien/Documents/PredicSis/workspaces/golang
+# Add Goop
+export PATH=$PATH:$GOPATH/bin
+
+# Docker boot2docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/bastien/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -73,3 +80,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='mvim'
 fi
+
+# Use direnv to manage ENV variables
+eval "$(direnv hook zsh)"
