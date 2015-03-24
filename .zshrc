@@ -81,5 +81,5 @@ else
   export EDITOR='mvim'
 fi
 
-# Use direnv to manage ENV variables
+# Use direnv to manage ENV variables (http://direnv.net/)
 eval "$(direnv hook zsh)"
